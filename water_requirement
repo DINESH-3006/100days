@@ -1,0 +1,12 @@
+#include <stdio.h>
+#define mod 1e9 + 7
+int main(void) {
+	// your code goes here
+    int ip,a;
+    scanf("%d",&ip);
+    while(ip--){
+        scanf("%d",&a);
+        printf("%d\n",a*2);
+    }
+	return 0;
+}
