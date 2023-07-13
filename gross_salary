@@ -1,0 +1,30 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class gross_salary
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+        Scanner sc=new Scanner(System.in);
+        int ip=sc.nextInt();
+        while(ip>0){
+            double hra,da;
+            int sal=sc.nextInt();
+            if(sal<1500){
+                hra=(0.1)*sal;
+                da=0.9*sal;
+                System.out.println(String.format("%.2f",(sal+hra+da)));
+            }
+            else{
+                hra=500;
+                da=(0.98)*sal;
+                System.out.println(String.format("%.2f",(sal+hra+da)));
+            }
+            ip--;
+           
+        }
+	}
+}
